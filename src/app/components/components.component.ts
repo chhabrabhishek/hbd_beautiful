@@ -6,11 +6,7 @@ import * as Rellax from 'rellax';
 @Component({
     selector: 'app-components',
     templateUrl: './components.component.html',
-    styles: [`
-    ngb-progressbar {
-        margin-top: 5rem;
-    }
-    `]
+    styleUrls: ['./components.components.css']
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
