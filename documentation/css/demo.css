@@ -1489,10 +1489,6 @@
     display: none !important;
 }
 
-.section-basic {
-    padding-top: 0;
-}
-
 .section-images {
     padding-bottom: 0;
     z-index: 2;
