@@ -1,8 +1,15 @@
 #aWord{
+    text-align: center;
     font-family: 'Merienda One', cursive;
+    font-size: 250%;
+    font-weight: bolder;
 }
 
-.container{
-    padding: 20px 0 0 20px;
-    margin: 0;
+.section-basic{
+    padding: 20px 20px 0 20px;
+    margin: 1px;
+}
+
+#whatIFeel{
+    font-size: 160%;
 }

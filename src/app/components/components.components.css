@@ -12,3 +12,15 @@ ngb-progressbar {
     font-size: 100px;
     font-family: 'RofiTaste';
 }
+
+#weirdo{
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    font-size: 250%;
+    font-weight: bolder;
+}
+
+#carousel{
+    padding: 0 20px 0 20px;
+    margin: 1px;
+}
