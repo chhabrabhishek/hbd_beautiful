@@ -12,6 +12,8 @@ import * as Rellax from 'rellax';
 export class ComponentsComponent implements OnInit, OnDestroy {
     data : Date = new Date();
 
+    buttonClicked = true;
+
     page = 4;
     page1 = 5;
     page2 = 3;
@@ -39,6 +41,11 @@ export class ComponentsComponent implements OnInit, OnDestroy {
 
     isDisabled(date: NgbDateStruct, current: {month: number}) {
         return date.month !== current.month;
+    }
+
+    showAlert(){
+        this.buttonClicked = false;
+        setTimeout(() => this.buttonClicked = true, 5000);
     }
 
     ngOnInit() {

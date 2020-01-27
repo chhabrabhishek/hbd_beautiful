@@ -158,14 +158,14 @@
     .form-group.form-group-no-border,
     .input-group.form-group-no-border{
         .form-control{
-            background-color: $color5;
-            color: $color2;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            color: #fff;
 
             &:focus,
             &:active,
             &:active{
-                background-color: $color6;
-                color: $color3;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                color: #fff;
             }
         }
 
@@ -190,14 +190,14 @@
         }
 
         .input-group-text{
-            background-color: $color5;
+            background-color: rgba($color: #000000, $alpha: 0.5);
             border: none;
             color: $color2;
         }
 
         &.input-group-focus{
             .input-group-text{
-                background-color: $color6;
+                background-color: rgba($color: #000000, $alpha: 0.5);
                 color: $color3;
             }
         }

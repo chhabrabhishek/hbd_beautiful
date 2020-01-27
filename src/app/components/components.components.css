@@ -40,5 +40,51 @@ img{
 }
 
 .section-signup{
-    background: #ffffff;
+    background: #FFF;
+    padding: 20px 0 0 0;
+}
+
+#wish_her{
+    font-family: 'Merienda One', cursive;
+    font-size: 250%;
+    font-weight: bolder;
+}
+
+#textarea{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.col-md-4{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+hr{
+    border-top: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+#the_lines{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.carousel-caption{
+    color: white;
+    padding-top: 0;     
+}
+
+h4{
+    font-weight: bolder;
+}
+
+#madeWithLove{
+    margin: 0;
+    text-align: center;
+}
+
+:host >>> .alert-custom{
+    background-color: #f96332;
 }

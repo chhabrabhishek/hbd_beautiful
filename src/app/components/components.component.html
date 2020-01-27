@@ -12,68 +12,77 @@
 
   <div class="main">
       <app-basicelements></app-basicelements>
-      <app-navigation></app-navigation>
-      
-      <app-typography></app-typography>
-      <div class="section section-javascript" id="javascriptComponents">
+      <hr align="center" size="10px" width="70%">
+          <div class="section section-javascript" id="javascriptComponents">
           <div class="section" id="carousel">
                 <h3 id="weirdo">Weirdo!</h3>
                 <div class="row justify-content-center">
                     <div class="col-8">
-                    <ngb-carousel>
+                    <ngb-carousel  #carousel interval="3000" pauseOnHover="true">
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her1.jpg" alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her2.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her3.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her4.jpg" alt="Third slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her5.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her6.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her7.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her8.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her9.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her10.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                         <ng-template ngbSlide>
                             <img class="d-block" src="assets/img/her11.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption">
+                                <p style="font-weight: bold;">She hawt?</p>
                             </div>
                         </ng-template>
                     </ngb-carousel>
@@ -81,10 +90,12 @@
                 </div>
           </div>
         </div>
-      <div class="section section-signup" style="background-size: cover; background-position: top center;">
+        <hr align="center" size="10px" width="70%">
+      <div id="wishHerLink" class="section section-signup" style="background-size: cover; background-position: top center;">
           <div class="container login-page">
+            <h3 id="wish_her">Wish Her!</h3>
             <div class="row">
-              <div class="col-md-4 content-center ml-auto mr-auto">
+              <div class="col-md-4">
                   <div class="card card-login card-plain">
                       <form class="form" method="" action="">
                           <div class="header header-primary text-center">
@@ -94,27 +105,18 @@
                               <div class="input-group-prepend">
                                   <span class="input-group-text">  <i class="now-ui-icons users_circle-08"></i></span>
                               </div>
-                                <input type="text" class="form-control" placeholder="First Name..." (focus)="focus=true" (blur)="focus=false" >
+                                <input type="text" class="form-control" placeholder="Your name please." (focus)="focus=true" (blur)="focus=false" >
                             </div>
                             <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus1===true}">
                               <div class="input-group-prepend">
                                   <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
                               </div>
-                                <input type="text" placeholder="Last Name..." class="form-control" (focus)="focus1=true" (blur)="focus1=false"/>
+                                <textarea id="textarea" placeholder="She needs your blessings. Please spread some." class="form-control" (focus)="focus1=true" (blur)="focus1=false"></textarea>
                             </div>
                           </div>
                           <div class="footer text-center">
-                              <a href="#pablo" class="btn btn-primary btn-round btn-lg btn-block">Get Started</a>
-                          </div>
-                          <div class="text-center">
-                              <h6>
-                                  <a href="#pablo" class="link">Create Account</a>
-                              </h6>
-                          </div>
-                          <div class="text-center">
-                              <h6>
-                                  <a href="#pablo" class="link">Need Help?</a>
-                              </h6>
+                              <a href="javascript:void(0)" (click)="showAlert()" class="btn btn-primary">Happy Birthday</a>
+                              <ngb-alert type="custom" *ngIf="!buttonClicked" (close)="buttonClicked = true">Thank you for your wishes, I'll forward that to her!</ngb-alert>
                           </div>
                       </form>
                   </div>
@@ -122,76 +124,10 @@
             </div>
           </div>
       </div>
-      <div class="section section-download" id="#download-section" data-background-color="black">
+      <div class="section section-download" id="#love" data-background-color="black" style="padding-top: 5px; padding-bottom: 5px;">
           <div class="container">
-              <div class="row text-center mt-5">
-                  <div class="col-md-8 ml-auto mr-auto">
-                      <h2>Want more?</h2>
-                      <h5 class="description">We've just launched
-                          <a href="https://timcreative.github.io/now-ui-kit-pro-angular/presentation" target="_blank">Now UI Kit PRO Angular</a>. It has a huge number of components, sections and example pages. Start Your Development With A Badass Bootstrap 4 UI Kit.</h5>
-                  </div>
-                  <div class="col-md-12">
-                      <a href="https://timcreative.github.io/now-ui-kit-pro-angular/presentation" class="btn btn-neutral btn-round btn-lg" target="_blank">
-                          <i class="now-ui-icons arrows-1_share-66"></i> Upgrade to PRO
-                      </a>
-                  </div>
-              </div>
-              <br>
-              <br>
-              <div class="row justify-content-md-center sharing-area text-center">
-                <div class="text-center col-md-12 col-lg-8">
-                  <h3>Thank you for supporting us!</h3>
-                </div>
-                <div class="text-center col-md-12 col-lg-8">
-                  <a target="_blank" href="https://www.twitter.com/creativetim" class="btn btn-neutral btn-icon btn-twitter btn-round btn-lg" rel="tooltip" title="Follow us">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-neutral btn-icon btn-facebook btn-round btn-lg" rel="tooltip" title="Like us">
-                    <i class="fab fa-facebook-square"></i>
-                  </a>
-                  <a target="_blank" href="https://www.linkedin.com/company-beta/9430489/" class="btn btn-neutral btn-icon btn-linkedin btn-lg btn-round" rel="tooltip" title="Follow us">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                  <a target="_blank" href="https://github.com/creativetimofficial/now-ui-kit-angular" class="btn btn-neutral btn-icon btn-github btn-round btn-lg" rel="tooltip" title="Star on Github">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
+            <p id="madeWithLove">Made with so much of &#10084;&#65039; by Abhishek Chhabra</p>
           </div>
       </div>
   </div>
-  <footer class="footer" data-background-color="black">
-      <div class="container">
-          <nav>
-              <ul>
-                  <li>
-                      <a href="https://www.creative-tim.com">
-                          Creative Tim
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://www.creative-tim.com/about-us">
-                          About Us
-                      </a>
-                  </li>
-                  <li>
-                      <a href="http://blog.creative-tim.com">
-                          Blog
-                      </a>
-                  </li>
-                  <li>
-                      <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
-                          MIT License
-                      </a>
-                  </li>
-              </ul>
-          </nav>
-          <div class="copyright">
-              &copy;
-            {{data | date: 'yyyy'}}, Designed by
-              <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
-              <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
-          </div>
-      </div>
-  </footer>
 </div>

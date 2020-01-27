@@ -6,10 +6,16 @@
 }
 
 .section-basic{
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 20px 20px;
     margin: 1px;
 }
 
 #whatIFeel{
     font-size: 160%;
+    margin-bottom: 0;
+}
+
+.col-8{
+    max-width: 90%;
+    flex: 0 0 90%;
 }
