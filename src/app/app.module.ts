@@ -22,7 +22,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
