@@ -55,17 +55,17 @@ export class ComponentsComponent implements OnInit, OnDestroy {
     }
 
     onSubmit(form: NgForm){
-        if(!form.value.name || form.value.name === ""){
-            window.alert("You don't want her to know your name!");
+        if(!form.value.name || form.value.name === "" || !form.value.wish || form.value.wish === ""){
+            window.alert("You can't go without entering your name or your wish!");
         }
-        if(!form.value.wish || form.value.wish === ""){
-            window.alert("You can't leave without wishing, Please wish her something good!");
+        else{
+            let data = form.value;
+            this.fireStore.collection('wishes').add(data);
+            this.resetForm(form);
+            this.buttonClicked = false;
+            setTimeout(() => this.buttonClicked = true, 5000);
         }
-        let data = form.value;
-        this.fireStore.collection('wishes').add(data);
-        this.resetForm(form);
-        this.buttonClicked = false;
-        setTimeout(() => this.buttonClicked = true, 5000);
+
     }
 
     constructor(private fireStore: AngularFirestore){
